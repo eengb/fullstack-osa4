@@ -1,0 +1,66 @@
+
+
+post http://localhost:3003/api/login
+Content-Type:application/json
+
+{
+  "username": "Thunder",
+  "password": "admin"
+  
+}
+
+
+
+###
+
+GET http://localhost:3003/api/blogs
+
+###
+
+GET http://localhost:3003/api/blogs/1
+
+###
+
+DELETE http://localhost:3003/api/blogs/6116af1def734822144880f6
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRodW5kZXIiLCJpZCI6IjYxMTUyNjQ2NDZjMDU5MjUyZGYxYWUyNCIsImlhdCI6MTYyODc4NDEwN30.dt-f04-D65D48uga70fDzd-rZENLREuU-uCfS5RR8IU
+
+###
+
+
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRodW5kZXIiLCJpZCI6IjYxMTUyNjQ2NDZjMDU5MjUyZGYxYWUyNCIsImlhdCI6MTYyODg3MDgxOX0.O_5CJEym8to0oZ4KARgryVYsPX0m05L2bJBv0mmU91Q
+
+{
+  "title": "mmoorks",
+  "author": "Ada L",
+  "url": "www.blogi.fi/vv",
+  "likes": 109
+  
+}
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type:application/json
+
+{
+      "username": "T",
+      "name": "Tom",
+      "password": "admin"  
+}
+
+###
+
+PUT http://localhost:3003/api/blogs/6110070272e7090c63451f17
+Content-Type:application/json
+
+{
+  "title": "Update",
+  "author": "Vilma k",
+  "url": "www.blogi.fi/mk",
+  "likes": "7"
+  
+}
